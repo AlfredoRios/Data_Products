@@ -7,12 +7,14 @@ http://rpubs.com/AlfredoRios/102103
 
 This application uses a generalized mixed model (binomial) to predict
 the probability of injury or death (=personal damage) in the US due to Tornados. 
-Data was obtained from the National Weather service and suplmented with the total US population to compute the probability of personal damage.
+Data was obtained from the National Weather service and suplmented with the total US population
+to compute the probability of personal damage.
 
 The app consists of one page divided in two sections the first section contains
-a slider for months and a map. All the probabilities for states and months have been previously computed by a mixed binomial model, as the slider is changed the R code in the server selects all the probabilties for the states for the selected month. Therafter probabilties are pictured in a range of tones from white to dark red. Darker colors have highest probabilities of personal damage. The aim of this is to have a view of the spatial pattern of tornados. 
+a slider for months and a map. All the probabilities for states and months have been previously computed by a mixed binomial model, as the slider is changed the R code in the server selects all the probabilties for the states for the selected month. Therafter probabilties are pictured in a range of tones from white to dark red. Darker colors have highest probabilities of personal damage. The aim of this is to have a view of the spatial-temporal pattern of tornados. 
 
 The second part of the app has two data input menus which allows the selection of STATES
 and a third data input to select a month. Using the first menu STATE1 and the month
-input button you can estimate the precise probability for a state(STATE1) in a particular month. Also you can get the relative risk of personal damage by selecting a different state in the STATE2 input menu.
+input button you can estimate the precise probability of personal damage for a state(=STATE1) in a particular month. Also you can get the relative risk of personal damage by selecting a different state in the STATE2 input menu. This is equivent to dividing the probabilities of the states
+selected in STATE1 and STATE2.
 
